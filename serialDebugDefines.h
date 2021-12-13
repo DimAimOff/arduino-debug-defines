@@ -9,6 +9,7 @@
 
 #define DEBUG 0 // debug enable is 1
 
+#if DEBUG == 1
 #define __dbgstart(x) Serial.begin(x)                   // initial Serial communication
 #define __dbg(x) Serial.println(x)                      // one variable output with new line
 #define __dbgln(x,y) Serial.print(x); Serial.println(y) // two variables output with new line
